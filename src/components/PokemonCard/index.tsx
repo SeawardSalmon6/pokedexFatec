@@ -27,7 +27,12 @@ const PokemonCard: React.FC = () => {
 
         {/* Pokemon */}
         <div className={styles.image}>
-          <Image src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" alt="Pokemon icon" layout="fill" objectFit="cover" />
+          <Image
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png"
+            alt="Pokemon icon"
+            layout="fill"
+            objectFit="cover"
+          />
         </div>
       </div>
     </div>
