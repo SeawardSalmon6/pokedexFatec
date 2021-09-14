@@ -19,6 +19,10 @@ const Home: NextPage = () => {
           <PokemonCard />
           <PokemonCard />
           <PokemonCard />
+          <PokemonCard />
+          <PokemonCard />
+          <PokemonCard />
+          <PokemonCard />
         </div>
       </section>
     </main>

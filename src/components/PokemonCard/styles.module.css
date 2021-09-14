@@ -1,0 +1,58 @@
+/* Card-Container */
+.container {
+  background: #1390ff;
+  max-height: 130px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 16px;
+
+}
+
+/* Info-Column */
+.info {
+  padding: 12px;
+  text-transform: capitalize;
+}
+
+.info h1 {
+  font-weight: bold;
+  font-size: 28px;
+  color: #fff;
+}
+
+/* Types */
+.type {
+  margin-top: 4px;
+}
+
+.type span {
+  color: #f8f8f8;
+  background: rgba(255, 255, 255, .3);
+  padding: 6px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.type span:not(:first-child) { margin-left: 8px; }
+
+/* Styling Pokeball Container */
+.pokeball {
+  max-width: 130px;
+  position: relative;
+}
+
+/* Styling SVG */
+.pokeball svg {
+  width: 100%;
+  height: 100%;
+  opacity: .3;
+}
+
+/* Pokemon Image */
+.image {
+  height: 130px;
+  width: 130px;
+  position: absolute;
+  top: -40%;
+  right: 0;
+}
