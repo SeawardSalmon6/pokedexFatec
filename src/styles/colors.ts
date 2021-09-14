@@ -1,6 +1,6 @@
 /**
  * Pokemon colors are going to be re-defined here
- */
+*/
 export const colorMapping = {
   black: "#111827",
   blue: "#1e90ff",
