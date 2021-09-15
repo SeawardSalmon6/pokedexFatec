@@ -1,5 +1,4 @@
 import React from "react";
-import { NextPage } from "next";
 
 /* Components */
 import PokemonCard from "../components/PokemonCard";
@@ -8,15 +7,15 @@ import PokemonCard from "../components/PokemonCard";
 import styles from "../styles/pages/Home.module.css";
 
 /* Services */
-import { fetchPokemons } from "../services/pokemons";
+import { fetchPokemons } from "../services/pokemon";
 
 /* Types */
 import { Pokemon } from "../types/pokemon";
 
 /* Interface - create a datatype for abstract objects */
 interface Props {
-  pokemons: Pokemon[],
-};
+  pokemons: Pokemon[];
+}
 
 const Home = (props: Props) => {
   return (
@@ -26,14 +25,10 @@ const Home = (props: Props) => {
 
         {/* Listagem dos Pokemons */}
         <div className={styles.resultsContainer}>
-          <PokemonCard />
-          <PokemonCard />
-          <PokemonCard />
-          <PokemonCard />
-          <PokemonCard />
-          <PokemonCard />
-          <PokemonCard />
-          <PokemonCard />
+          {props.pokemons.map(function(pokemon) {
+            // Precisa atribuir uma key
+            return <PokemonCard key={pokemon.id} pokemon={pokemon} />;
+          })}
         </div>
       </section>
     </main>
