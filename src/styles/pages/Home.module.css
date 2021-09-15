@@ -24,3 +24,10 @@
   grid-template-columns: 1fr 1fr;
   gap: 64px 16px;
 }
+
+@media (max-width: 800px) {
+  .resultsContainer {
+    grid-template-columns: 1fr;
+    padding: 16px;
+  }
+}
