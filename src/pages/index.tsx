@@ -11,6 +11,7 @@ import { fetchPokemons } from "../services/pokemon";
 
 /* Types */
 import { Pokemon } from "../types/pokemon";
+import Input from "../components/Input";
 
 /* Interface - create a datatype for abstract objects */
 interface Props {
@@ -22,6 +23,10 @@ const Home = (props: Props) => {
     <main className={styles.container}>
       <section className={styles.content}>
         <h1 className={styles.title}>Pokedex Fatec</h1>
+
+        <div className={styles.inputContainer}>
+          <Input placeholder="Digite o nome do Pokemon" />
+        </div>
 
         {/* Listagem dos Pokemons */}
         <div className={styles.resultsContainer}>

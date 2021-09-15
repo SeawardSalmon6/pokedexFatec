@@ -13,6 +13,11 @@
   font-weight: bold;
 }
 
+.inputContainer {
+  width: 80%;
+  margin: 18 auto;
+}
+
 .resultsContainer {
   margin-top: 56px;
   display: grid;
