@@ -23,6 +23,7 @@
 /* Types */
 .type {
   margin-top: 4px;
+  text-transform: capitalize;
 }
 
 .type span {
