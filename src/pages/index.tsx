@@ -78,10 +78,10 @@ export async function getStaticProps() {
   const pokemons = await fetchPokemons();
 
   return {
+    revalidate: 1,
     props: {
       pokemons: pokemons,
     },
-    revalidate: 1,
   };
 }
 
